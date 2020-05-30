@@ -5,103 +5,159 @@
     <title>Capstone Playground</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/67d6003459.js" crossorigin="anonymous"></script>
+
+    <style>
+
+    </style>
 </head>
 
 <body>
 
 <div class="container-fluid">
-    <div class="row">
+    <div class="row my-3">
 
-        <div class="col-4">
-            <div class="container bg-secondary text-center">Refine Search by Amenities
+        <!-- Refine Search ------------------------------------------>
+        <div class="col-3 my-3">
+            <div class="container backgroundForest text-center py-3"><h4 class="border-bottom">Refine Search by Amenities</h4>
 
-                <div class="row">
+                <div class="row py-3 font-weight-bold">
                     <div class="col">
-                        <input type="checkbox" id="trashrecyclingcollection">
-                        <label for="trashrecyclingcollection">Trash Collection</label>
+                        <label for="trashrecyclingcollection" class="bg-white rounded-circle p-3">
+                        <input type="checkbox" id="trashrecyclingcollection" />
+                            <span class="checkLabel">&nbsp;<i class="fas fa-dumpster"></i>&nbsp;</span>
+                        </label>
+                        <br /> Trash Collection
                     </div>
                     <div class="col">
-                        <input type="checkbox" id="toilets">
-                        <label for="toilets">Toilets on Site</label>
-                    </div>
-                    <div class="col">
-                        <input type="checkbox" id="internetconnectivity">
-                        <label for="internetconnectivity">Internet Available</label>
+                        <label for="toilets" class="bg-white rounded-circle p-3">
+                            <input type="checkbox" id="toilets" />
+                            <span class="checkLabel">&nbsp;<i class="fas fa-toilet-paper"></i>&nbsp;</span>
+                        </label>
+                        <br /> Toilets on Site
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row py-3 font-weight-bold">
                     <div class="col">
-                        <input type="checkbox" id="showers">
-                        <label for="showers">Showers on Site</label>
+                        <label for="internetconnectivity" class="bg-white rounded-circle p-3">
+                            <input type="checkbox" id="internetconnectivity" />
+                            <span class="checkLabel"><i class="fas fa-wifi"></i></span>
+                        </label>
+                        <br /> Internet Available
                     </div>
                     <div class="col">
-                        <input type="checkbox" id="cellphonereception">
-                        <label for="cellphonereception">Cell Reception</label>
-                    </div>
-                    <div class="col">
-                        <input type="checkbox" id="laundry">
-                        <label for="laundry">Laundry on Site</label>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <input type="checkbox" id="dumpstation">
-                        <label for="dumpstation">RV Dump Station</label>
-                    </div>
-                    <div class="col">
-                        <input type="checkbox" id="campstore">
-                        <label for="campstore">Campstore Available</label>
-                    </div>
-                    <div class="col">
-                        <input type="checkbox" id="stafforvolunteerhostonsite">
-                        <label for="stafforvolunteerhostonsite">Host on Site</label>
+                        <label for="showers" class="bg-white rounded-circle p-3">
+                            <input type="checkbox" id="showers" />
+                            <span class="checkLabel">&nbsp;<i class="fas fa-shower"></i>&nbsp;</span>
+                        </label>
+                        <br /> Showers on Site
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row py-3 font-weight-bold">
                     <div class="col">
-                        <input type="checkbox" id="potablewater">
-                        <label for="potablewater">Potable Water Available</label>
+                        <label for="cellphonereception" class="bg-white rounded-circle p-3">
+                            <input type="checkbox" id="cellphonereception" />
+                            <span class="checkLabel">&nbsp;&nbsp;<i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;</span>
+                        </label>
+                        <br /> Cellphone Reception
                     </div>
                     <div class="col">
-                        <input type="checkbox" id="iceavailableforsale">
-                        <label for="iceavailableforsale">Ice for Sale</label>
-                    </div>
-                    <div class="col">
-                        <input type="checkbox" id="firewoodforsale">
-                        <label for="firewoodforsale">Firewood for Sale</label>
+                        <label for="laundry" class="bg-white rounded-circle p-3">
+                            <input type="checkbox" id="laundry" />
+                            <span class="checkLabel">&nbsp;<i class="fas fa-tshirt"></i>&nbsp;</span>
+                        </label>
+                        <br /> Laundry on Site
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row py-3 font-weight-bold">
                     <div class="col">
-                        <input type="checkbox" id="amphitheater">
-                        <label for="amphitheater">Amphitheaters</label>
+                        <label for="dumpstation" class="bg-white rounded-circle p-3">
+                            <input type="checkbox" id="dumpstation" />
+                            <span class="checkLabel">&nbsp;<i class="fas fa-poop"></i>&nbsp;</span>
+                        </label>
+                        <br /> RV Dump Station
                     </div>
                     <div class="col">
-                        <input type="checkbox" id="foodstoragelockers">
-                        <label for="foodstoragelockers">Food Storage Lockers</label>
+                        <label for="campstore" class="bg-white rounded-circle p-3">
+                            <input type="checkbox" id="campstore" />
+                            <span class="checkLabel">&nbsp;<i class="fas fa-cash-register"></i>&nbsp;</span>
+                        </label>
+                        <br /> Campstore Available
+                    </div>
+                </div>
+
+                <div class="row py-3 font-weight-bold">
+                    <div class="col">
+                        <label for="stafforvolunteerhostonsite" class="bg-white rounded-circle p-3">
+                            <input type="checkbox" id="stafforvolunteerhostonsite" />
+                            <span class="checkLabel"><i class="fas fa-caravan"></i></span>
+                        </label>
+                        <br /> Host on Site
+                    </div>
+                    <div class="col">
+                        <label for="potablewater" class="bg-white rounded-circle p-3">
+                            <input type="checkbox" id="potablewater" />
+                            <span class="checkLabel">&nbsp;&nbsp;<i class="fas fa-tint"></i>&nbsp;&nbsp;</span>
+                        </label>
+                        <br /> Potable Water Available
+                    </div>
+                </div>
+
+                <div class="row py-3 font-weight-bold">
+                    <div class="col">
+                        <label for="iceavailableforsale" class="bg-white rounded-circle p-3">
+                            <input type="checkbox" id="iceavailableforsale" />
+                            <span class="checkLabel"><i class="fas fa-igloo"></i></span>
+                        </label>
+                        <br /> Ice for Sale
+                    </div>
+                    <div class="col">
+                        <label for="firewoodforsale" class="bg-white rounded-circle p-3">
+                            <input type="checkbox" id="firewoodforsale" />
+                            <span class="checkLabel">&nbsp;<i class="fas fa-fire-alt"></i>&nbsp;</span>
+                        </label>
+                        <br /> Firewood for Sale
+                    </div>
+                </div>
+
+                <div class="row py-3 font-weight-bold">
+                    <div class="col">
+                        <label for="amphitheater" class="bg-white rounded-circle p-3">
+                            <input type="checkbox" id="amphitheater" />
+                            <span class="checkLabel"><i class="fas fa-theater-masks"></i></span>
+                        </label>
+                        <br /> Amphitheaters
+                    </div>
+                    <div class="col">
+                        <label for="foodstoragelockers" class="bg-white rounded-circle p-3">
+                            <input type="checkbox" id="foodstoragelockers" />
+                            <span class="checkLabel">&nbsp;<i class="fas fa-box"></i>&nbsp;</span>
+                        </label>
+                        <br /> Food Storage Lockers
                     </div>
                 </div>
 
             </div>
         </div>
 
-        <div class="col-7">
+        <div class="col-8">
 
-            <div class="row">
-                <div class="offset-1 col-6">
+            <!-- Search ------------------------------------------>
+            <div class="row d-flex justify-content-between">
+                <div class="col-8">
                     <form>
-                        <input type='text' id='search' name='search' placeholder='Search For Parks...' />
+                        <input class="p-2" type='text' id='search' name='search' placeholder='Search For Parks...' />
                     </form>
                 </div>
                 <div class="col-3">
                     Filter By State:
-                    <select name="state" size="1">
+                    <select name="state" size="1" class="p-2">
+                        <option value="">All States</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
                         <option value="AZ">Arizona</option>
@@ -157,13 +213,15 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row my-3">
 
-                <div class="col-4 bg-light">
+            <!-- Park Output ------------------------------------------>
+
+                <div class="col-4 bg-light py-3">
                     <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f0a23c8-5536-414b-b889-860a7a9f419b/d4teg4h-71a65b70-d1e4-423b-b5be-5cfa0e65ce1e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi8xZjBhMjNjOC01NTM2LTQxNGItYjg4OS04NjBhN2E5ZjQxOWIvZDR0ZWc0aC03MWE2NWI3MC1kMWU0LTQyM2ItYjViZS01Y2ZhMGU2NWNlMWUucG5nIn1dXX0.aIdoTPYjO4n15fkYqluGF5JJV0eadJL3ozbnJyze40Y"
                         alt="Park Picture" class="img-fluid">
                 </div>
-                <div class="col-8 bg-light">
+                <div class="col-8 bg-light py-3">
                     <div class="row">
                         <div class="col">
                             <h2>Park Name</h2>
@@ -176,11 +234,11 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="col-4 py-3">
                     <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f0a23c8-5536-414b-b889-860a7a9f419b/d4teg4h-71a65b70-d1e4-423b-b5be-5cfa0e65ce1e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi8xZjBhMjNjOC01NTM2LTQxNGItYjg4OS04NjBhN2E5ZjQxOWIvZDR0ZWc0aC03MWE2NWI3MC1kMWU0LTQyM2ItYjViZS01Y2ZhMGU2NWNlMWUucG5nIn1dXX0.aIdoTPYjO4n15fkYqluGF5JJV0eadJL3ozbnJyze40Y"
                          alt="Park Picture" class="img-fluid">
                 </div>
-                <div class="col-8">
+                <div class="col-8 py-3">
                     <div class="row">
                         <div class="col">
                             <h2>Park Name</h2>
@@ -193,22 +251,6 @@
                     </div>
                 </div>
 
-                <div class="col-4 bg-light">
-                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f0a23c8-5536-414b-b889-860a7a9f419b/d4teg4h-71a65b70-d1e4-423b-b5be-5cfa0e65ce1e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi8xZjBhMjNjOC01NTM2LTQxNGItYjg4OS04NjBhN2E5ZjQxOWIvZDR0ZWc0aC03MWE2NWI3MC1kMWU0LTQyM2ItYjViZS01Y2ZhMGU2NWNlMWUucG5nIn1dXX0.aIdoTPYjO4n15fkYqluGF5JJV0eadJL3ozbnJyze40Y"
-                         alt="Park Picture" class="img-fluid">
-                </div>
-                <div class="col-8 bg-light">
-                    <div class="row">
-                        <div class="col">
-                            <h2>Park Name</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        I hate the Wetlands. They're stupid and wet, and there are bugs everywhere, and I think I maced a crane.
-                        Pound is tic-tac-toe, right? Get rid of the Seaward. Lucille: I'll leave when I'm good and ready. Wine
-                        only turns to alcohol if you let it sit. No, Pop-pop does not get a treat, I just brought you a [bleep]ing pizza.
-                    </div>
-                </div>
             </div>
 
             {/* Pagination for navigating */}
